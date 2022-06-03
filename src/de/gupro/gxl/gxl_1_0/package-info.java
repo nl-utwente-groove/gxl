@@ -5,5 +5,5 @@
 // Generated on: 2010.05.25 at 01:59:43 AM CEST 
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "http://www.gupro.de/GXL/gxl-1.0.dtd", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED)
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "http://www.gupro.de/GXL/gxl-1.0.dtd", elementFormDefault = jakarta.xml.bind.annotation.XmlNsForm.QUALIFIED)
 package de.gupro.gxl.gxl_1_0;
