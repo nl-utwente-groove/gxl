@@ -2,7 +2,6 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>groove-gxl</groupId>
   <artifactId>jaxb-gxl</artifactId>
-  <version>1.0</version>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -27,4 +26,5 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
+  <version>2.0</version>
 </project>
