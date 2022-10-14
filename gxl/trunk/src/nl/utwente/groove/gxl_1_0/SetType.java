@@ -6,7 +6,7 @@
 //
 
 
-package de.gupro.gxl.gxl_1_0;
+package nl.utwente.groove.gxl_1_0;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
@@ -14,14 +14,14 @@ import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for NodeType complex type.
+ * <p>Java class for SetType complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="NodeType">
+ * &lt;complexType name="SetType">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.gupro.de/GXL/gxl-1.0.dtd}GraphElementType">
+ *     &lt;extension base="{http://www.gupro.de/GXL/gxl-1.0.dtd}CompositeValueType">
  *     &lt;/extension>
  *   &lt;/complexContent>
  * &lt;/complexType>
@@ -30,9 +30,9 @@ import jakarta.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "NodeType")
-public class NodeType
-    extends GraphElementType
+@XmlType(name = "SetType")
+public class SetType
+    extends CompositeValueType
 {
 
 

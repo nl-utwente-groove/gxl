@@ -6,7 +6,7 @@
 //
 
 
-package de.gupro.gxl.gxl_1_0;
+package nl.utwente.groove.gxl_1_0;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -18,12 +18,12 @@ import javax.xml.namespace.QName;
 
 
 /**
- * <p>Java class for LocatorType complex type.
+ * <p>Java class for TypeType complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="LocatorType">
+ * &lt;complexType name="TypeType">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;anyAttribute namespace='http://www.w3.org/1999/xlink'/>
@@ -35,8 +35,8 @@ import javax.xml.namespace.QName;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "LocatorType")
-public class LocatorType {
+@XmlType(name = "TypeType")
+public class TypeType {
 
     @XmlAnyAttribute
     private Map<QName, String> otherAttributes = new HashMap<QName, String>();

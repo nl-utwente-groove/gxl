@@ -6,7 +6,7 @@
 //
 
 
-package de.gupro.gxl.gxl_1_0;
+package nl.utwente.groove.gxl_1_0;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
@@ -14,12 +14,12 @@ import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for BagType complex type.
+ * <p>Java class for TupType complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="BagType">
+ * &lt;complexType name="TupType">
  *   &lt;complexContent>
  *     &lt;extension base="{http://www.gupro.de/GXL/gxl-1.0.dtd}CompositeValueType">
  *     &lt;/extension>
@@ -30,8 +30,8 @@ import jakarta.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "BagType")
-public class BagType
+@XmlType(name = "TupType")
+public class TupType
     extends CompositeValueType
 {
 

@@ -6,7 +6,7 @@
 //
 
 
-package de.gupro.gxl.gxl_1_0;
+package nl.utwente.groove.gxl_1_0;
 
 import jakarta.xml.bind.annotation.XmlEnum;
 import jakarta.xml.bind.annotation.XmlEnumValue;
@@ -14,34 +14,37 @@ import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for directionType.
+ * <p>Java class for edgemodeType.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="directionType">
+ * &lt;simpleType name="edgemodeType">
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="in"/>
- *     &lt;enumeration value="out"/>
- *     &lt;enumeration value="none"/>
+ *     &lt;enumeration value="directed"/>
+ *     &lt;enumeration value="undirected"/>
+ *     &lt;enumeration value="defaultdirected"/>
+ *     &lt;enumeration value="defaultundirected"/>
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
  * 
  */
-@XmlType(name = "directionType")
+@XmlType(name = "edgemodeType")
 @XmlEnum
-public enum DirectionType {
+public enum EdgemodeType {
 
-    @XmlEnumValue("in")
-    IN("in"),
-    @XmlEnumValue("out")
-    OUT("out"),
-    @XmlEnumValue("none")
-    NONE("none");
+    @XmlEnumValue("directed")
+    DIRECTED("directed"),
+    @XmlEnumValue("undirected")
+    UNDIRECTED("undirected"),
+    @XmlEnumValue("defaultdirected")
+    DEFAULTDIRECTED("defaultdirected"),
+    @XmlEnumValue("defaultundirected")
+    DEFAULTUNDIRECTED("defaultundirected");
     private final String value;
 
-    DirectionType(String v) {
+    EdgemodeType(String v) {
         value = v;
     }
 
@@ -49,8 +52,8 @@ public enum DirectionType {
         return value;
     }
 
-    public static DirectionType fromValue(String v) {
-        for (DirectionType c: DirectionType.values()) {
+    public static EdgemodeType fromValue(String v) {
+        for (EdgemodeType c: EdgemodeType.values()) {
             if (c.value.equals(v)) {
                 return c;
             }
