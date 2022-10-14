@@ -6,4 +6,4 @@
 //
 
 @jakarta.xml.bind.annotation.XmlSchema(namespace = "http://www.gupro.de/GXL/gxl-1.0.dtd", elementFormDefault = jakarta.xml.bind.annotation.XmlNsForm.QUALIFIED)
-package de.gupro.gxl.gxl_1_0;
+package nl.utwente.groove.gxl_1_0;

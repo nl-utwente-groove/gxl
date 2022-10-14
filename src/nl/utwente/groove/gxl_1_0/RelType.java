@@ -6,27 +6,26 @@
 //
 
 
-package de.gupro.gxl.gxl_1_0;
+package nl.utwente.groove.gxl_1_0;
 
 import java.util.ArrayList;
 import java.util.List;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
-import jakarta.xml.bind.annotation.XmlSeeAlso;
 import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for GraphElementType complex type.
+ * <p>Java class for RelType complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="GraphElementType">
+ * &lt;complexType name="RelType">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.gupro.de/GXL/gxl-1.0.dtd}TypedElementType">
+ *     &lt;extension base="{http://www.gupro.de/GXL/gxl-1.0.dtd}LocalConnectionType">
  *       &lt;sequence>
- *         &lt;element ref="{http://www.gupro.de/GXL/gxl-1.0.dtd}graph" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element ref="{http://www.gupro.de/GXL/gxl-1.0.dtd}relend" maxOccurs="unbounded" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>
@@ -36,46 +35,42 @@ import jakarta.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "GraphElementType", propOrder = {
-    "graph"
+@XmlType(name = "RelType", propOrder = {
+    "relend"
 })
-@XmlSeeAlso({
-    NodeType.class,
-    LocalConnectionType.class
-})
-public class GraphElementType
-    extends TypedElementType
+public class RelType
+    extends LocalConnectionType
 {
 
-    protected List<GraphType> graph;
+    protected List<RelendType> relend;
 
     /**
-     * Gets the value of the graph property.
+     * Gets the value of the relend property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the graph property.
+     * This is why there is not a <CODE>set</CODE> method for the relend property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getGraph().add(newItem);
+     *    getRelend().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link GraphType }
+     * {@link RelendType }
      * 
      * 
      */
-    public List<GraphType> getGraph() {
-        if (graph == null) {
-            graph = new ArrayList<GraphType>();
+    public List<RelendType> getRelend() {
+        if (relend == null) {
+            relend = new ArrayList<RelendType>();
         }
-        return this.graph;
+        return this.relend;
     }
 
 }

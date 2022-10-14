@@ -6,7 +6,7 @@
 //
 
 
-package de.gupro.gxl.gxl_1_0;
+package nl.utwente.groove.gxl_1_0;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
